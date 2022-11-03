@@ -1,5 +1,9 @@
 .App {
+  display: flex;
+  height: 100vh;
+  align-items:center;
   text-align: center;
+  width: 100%;
 }
 
 .App-logo {
@@ -36,3 +40,136 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+body {
+  margin: 0 auto;
+  background: rgb(190, 101, 183);
+}
+.promo  {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  
+}
+.hero {
+  display: flex;
+  /* width: 920px; */
+  background: #fff;
+  border-radius: 20px;
+  margin: 0 auto;
+  
+}
+
+#columns {
+  
+  width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.hidden {
+  
+  background: #fff;
+  padding: 1px;
+  color: rgb(48, 177, 48);
+  
+}
+
+button {
+  border: none;
+  outline: none;
+  background: #fff;
+  cursor: pointer;
+  }
+span {
+  width: 10px;
+  height: 10px;
+}
+
+.game-button {
+ 
+  width: 10px;
+  height: 10px;
+  font-size: 20px;
+  
+  padding: 1px;
+}
+.active {
+  background: rgb(48, 177, 48);
+  color: #fff;
+  border-radius: 5px;
+  padding: 1px;
+}
+.error {
+  background: rgb(172, 25, 25);
+}
+
+#reset {
+ margin-top: 20px;
+  color: green;
+  
+}
+
+.start {
+width: 500px;
+
+  
+  align-items: center;
+  padding: 20px;
+  
+
+}
+.start-title {
+  width: 200px;
+  
+}
+.statistics {
+      border-left: 1px solid #000;
+  margin: 5px;
+  padding: 20px;
+}
+.statistics__err, 
+.statistics__acc, 
+.statistics__speed  {
+margin-bottom: 10px;
+font-size: 18px;
+}
+.fas {
+  color: rgb(190, 101, 183);
+}
+
+.fa-reply {
+  color: green;
+}
+
+input {
+  display: none;
+}
+
+
+@media screen and (max-width: 910px) {
+  .hero {
+    /* width: 700px; */
+    display: block;
+  }
+  #columns {
+    width: 700px;
+    padding: 5px;
+  }
+  .statistics {
+    border-left: none;
+    border-top: 1px solid #000;
+    display: flex;
+    justify-content: space-between;
+  }
+   }
+
+
+
