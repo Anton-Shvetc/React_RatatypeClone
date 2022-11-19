@@ -1,4 +1,4 @@
-export function Statistics({ countErrors, accuracy }) {
+export function Statistics({ countErrors, accuracy, typeSpeed }) {
   const reset = () => {
     console.log("reset");
     window.location.reload();
@@ -25,8 +25,7 @@ export function Statistics({ countErrors, accuracy }) {
           <h3>
             Скорость <i className="fas fa-tachometer-alt"></i>
           </h3>
-          {/* <span id="statistics__speed">0 зн./мин</span> */}
-          <span id="statistics__speed">бесконечность</span>
+          <span id="statistics__speed">{`${typeSpeed} зн/мин`}</span>
         </div>
         <div className="reset">
           <button onClick={reset}>Сброс </button>{" "}
